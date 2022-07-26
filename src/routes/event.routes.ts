@@ -8,7 +8,7 @@ export const eventRoutes = () => {
     
     routes.post('/', EventController.createEvent)
     routes.get('/', EventController.getAllEvents)
-    routes.get('/:params', EventController.getByParams)
+    routes.get('/search/:params', EventController.getByParams)
     routes.delete('/:event_id', verifyEventExists, EventController.deleteEvent)
     routes.patch('/:event_id', verifyEventExists, EventController.updateEvent )
 

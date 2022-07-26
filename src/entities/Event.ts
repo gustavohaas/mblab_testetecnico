@@ -12,7 +12,7 @@ export class Event {
     location_name: string;
 
     @Column()
-    date: Date;
+    date: string;
 
     @Column({nullable: true})
     description: string;

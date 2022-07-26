@@ -2,7 +2,7 @@ export interface IEvent {
   id: string
   name: string;
   location_name: string;
-  date: Date;
+  date: string;
   description?: string;
   time: string;
   organization: string;
@@ -12,9 +12,18 @@ export interface IEvent {
 export interface ICreateEvent {
   name: string;
   location_name: string;
-  date: Date;
+  date: string;
   description?: string;
   time: string;
   organization: string;
   tickets: number;
+}
+
+export interface IUpdateEvent {
+  name?: string;
+  location_name?: string;
+  date?: string;
+  description?: string;
+  time?: string;
+  organization?: string;
 }

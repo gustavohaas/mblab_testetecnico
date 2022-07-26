@@ -5,7 +5,7 @@ import { ErrorHandler } from "../errors";
 
 const verifyEventExists = async (req: Request, res: Response, next: NextFunction) => {
   
-  const {event_id} = req.params
+  const event_id = req.params.event_id
 
   const eventRepository = AppDataSource.getRepository(Event);
 

@@ -1,4 +1,3 @@
-import "express-async-errors";
 import express, { NextFunction, Request, Response } from "express";
 import { errorHandler } from "./errors";
 

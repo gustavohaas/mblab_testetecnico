@@ -1,8 +1,8 @@
 import { AppDataSource } from "../../data-source";
-import { ICreateEvent } from "../../interface/Event.interface";
+import { IUpdateEvent } from "../../interface/Event.interface";
 import { Event } from "../../entities/Event";
 
-const updateEventService =async (data: ICreateEvent, event_id: string) => {
+const updateEventService =async (data: IUpdateEvent, event_id: string) => {
     const eventRepository = AppDataSource.getRepository(Event);
 
     await eventRepository.update(event_id, {...data});
