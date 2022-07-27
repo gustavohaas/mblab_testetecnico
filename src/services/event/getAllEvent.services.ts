@@ -6,7 +6,7 @@ const getAllEventService =async () => {
 
     const events = await eventRepository.find()
 
-    return {status: 200, message: {events}}
+    return {status: 200, message: events}
 };
 
 export default getAllEventService

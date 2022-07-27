@@ -11,7 +11,7 @@ const updateEventService =async (data: IUpdateEvent, event_id: string) => {
 
     const updatedEvent = events.find(event => event.id === event_id)
 
-    return {status: 200, message: {updatedEvent}}
+    return {status: 200, message: updatedEvent}
 };
 
 export default updateEventService

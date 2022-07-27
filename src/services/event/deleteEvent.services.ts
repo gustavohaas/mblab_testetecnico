@@ -7,7 +7,7 @@ const deleteEventService =async (event_id: string) => {
 
     await eventRepository.delete(event_id)
 
-    return {status: 200, message: 'event deleted'}
+    return {status: 200, message: {message: 'Event deleted'}}
 };
 
 export default deleteEventService

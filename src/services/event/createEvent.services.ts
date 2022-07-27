@@ -17,7 +17,7 @@ const createEventService =async ({ name, location_name, date, description, time,
 
     await eventRepository.save(newEvent);
 
-    return {status: 200, message: {newEvent}}
+    return {status: 200, message: newEvent}
 };
 
 export default createEventService

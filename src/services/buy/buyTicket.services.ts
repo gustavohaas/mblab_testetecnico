@@ -30,7 +30,7 @@ const buyTicketService = async (quantity: number, event_id: string) => {
         boghtTickets.push(ticket)
     }
 
-    return {status: 200, message: {boghtTickets}}
+    return {status: 200, message: boghtTickets}
 }
 
 export default buyTicketService
